@@ -1,23 +1,22 @@
 package nl.frisodobber.spark.app;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import javax.enterprise.event.Observes;
+import javax.inject.Inject;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import static spark.Spark.get;
 import static spark.Spark.port;
+
+import nl.frisodobber.spark.api.SparkApi;
+import org.jboss.weld.environment.se.events.ContainerInitialized;
 
 /**
  * Created by dobber on 21-11-16.
  */
 public class SparkInit {
-    public static void main(String[] args) {
+    @Inject
+    private SparkApi sparkApi;
+
+    public void main(@Observes ContainerInitialized event) {
         port(SparkConfiguration.getWebPort());
-        Map<String, String> helloMap = new HashMap<>();
-        helloMap.put("hello", "Hello World");
-        Gson gson = new GsonBuilder().disableHtmlEscaping().create();
-        get("/hello", (req, res) -> gson.toJson(helloMap));
+        sparkApi.init();
     }
 }
