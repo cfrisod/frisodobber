@@ -1,0 +1,17 @@
+#List all container including inactive
+docker ps -a
+
+#Start docker image and bind it to a port
+docker run -it -p host-port:docker-port image-name
+
+#Stop all containers
+docker stop $(docker ps -a -q)
+
+#Remove all containers
+docker rm $(docker ps -a -q)
+
+#Run in the background and name the container for easy reference
+docker run -d --name=mongodb mongo
+
+#Run and link with previous named container
+docker run -it -p 8080:8080 --link mongodb:mongo node/todo_app

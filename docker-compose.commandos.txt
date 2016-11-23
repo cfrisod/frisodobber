@@ -1,0 +1,2 @@
+#Dependent on a created docker-compose.yml
+docker-compose up

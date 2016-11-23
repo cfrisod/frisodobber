@@ -1,0 +1,4 @@
+fd-spark:
+  image: frisodobber-fd-spark
+  ports:
+    - "8080:8090"
