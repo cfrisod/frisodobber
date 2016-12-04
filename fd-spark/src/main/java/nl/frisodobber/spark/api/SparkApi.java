@@ -2,6 +2,7 @@ package nl.frisodobber.spark.api;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import nl.frisodobber.spark.model.ApiService;
 import nl.frisodobber.spark.service.SparkService;
 import spark.servlet.SparkApplication;
 
@@ -18,6 +19,7 @@ public class SparkApi implements SparkApplication {
 
     private Gson gson = new GsonBuilder().disableHtmlEscaping().create();
     public void init() {
-        get("/hello", (req, res) -> gson.toJson(sparkService.getKeyValues()));
+        get("/keyvalue", (req, res) -> gson.toJson(sparkService.getKeyValues()));
+        get("/entity", (req, res) -> gson.toJson(sparkService.getEntity(ApiService.class).get()));
     }
 }
