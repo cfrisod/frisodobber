@@ -13,7 +13,6 @@
         <module>fd-spark</module>
         <module>fd-service-sql</module>
         <module>fd-java-serviceloader</module>
-        <module>fd-java-serviceloader-simple-view-provider</module>
     </modules>
 
     <properties>
