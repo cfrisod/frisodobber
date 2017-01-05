@@ -13,6 +13,8 @@
         <module>fd-spark</module>
         <module>fd-service-sql</module>
         <module>fd-java-serviceloader</module>
+        <module>fd-junit5</module>
+        <module>fd-java9-jigsaw</module>
     </modules>
 
     <properties>
@@ -35,4 +37,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
