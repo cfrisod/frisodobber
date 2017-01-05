@@ -13,4 +13,7 @@ mvn dependency:purge-local-repository
 #With the maven spotify docker plugin create a docker image that runs the java jar
 mvn clean package docker:build
 
+#Run a projects main class
 mvn clean verify exec:java -Dexec.mainClass="nl.frisodobber.java.serviceloader.service.UiApplication"
+
+# Add -X to see the total logging of maven execution
