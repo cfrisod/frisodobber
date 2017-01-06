@@ -27,10 +27,10 @@ public class Main extends Application {
 
     @Override
     public void init() {
-        loadViews();
+        loadAlgorithms();
     }
 
-    private void loadViews() {
+    private void loadAlgorithms() {
         algorithms = ServiceLoader.load(Algorithm.class);
     }
 

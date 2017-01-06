@@ -5,13 +5,13 @@ This project is used for my experiments with building and trying all kinds of te
 - Java 5
     - ServiceLoader
 - Java 8 
-    - Lambda
-    - Stream 
+    - IN PROGRESS - Lambda
+    - IN PROGRESS - Stream 
     - Time
 - Spark framework - http://sparkjava.com/
 - Docker
     - Docker compose
 - Java 9 
-    - IN PROGRESS - Jigsaw
+    - Jigsaw
 - IN PROGRESS - JUnit 5 - http://junit.org/junit5/
 - IN PROGRESS - jOOQ - http://www.jooq.org/
