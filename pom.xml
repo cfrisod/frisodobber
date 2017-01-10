@@ -13,8 +13,6 @@
         <module>fd-spark</module>
         <module>fd-service-sql</module>
         <module>fd-java-serviceloader</module>
-        <module>fd-junit5</module>
-        <module>fd-java9-jigsaw</module>
     </modules>
 
     <properties>

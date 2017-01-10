@@ -5,8 +5,3 @@
 *.iml
 **/target
 **/dependency-reduced-pom.xml
-/fd-java9-jigsaw/libs/fd-java9-jigsaw-algorithm-add-1.0-SNAPSHOT.jar
-/fd-java9-jigsaw/libs/fd-java9-jigsaw-algorithm-api-1.0-SNAPSHOT.jar
-/fd-java9-jigsaw/libs/fd-java9-jigsaw-cli-1.0-SNAPSHOT.jar
-/fd-java9-jigsaw/libs/fd-java9-jigsaw-algorithm-substract-1.0-SNAPSHOT.jar
-/fd-java9-jigsaw/libs/fd-java9-jigsaw-gui-1.0-SNAPSHOT.jar
