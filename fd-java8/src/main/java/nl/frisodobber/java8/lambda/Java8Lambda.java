@@ -14,4 +14,9 @@ public class Java8Lambda {
     /**
      * SupplierConsumer, Predicate, Function and BiFunction
      */
+
+
+    public static void main(String... args) {
+
+    }
 }
