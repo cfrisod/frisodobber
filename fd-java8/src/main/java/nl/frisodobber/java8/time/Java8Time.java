@@ -1,5 +1,6 @@
 package nl.frisodobber.java8.time;
 
+import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -25,6 +26,10 @@ public class Java8Time {
         System.out.println(getLocalDateTimeAtZulu());
 
         System.out.println(getZonedDateTimeAtSystemDefault());
+
+        System.out.println(ZonedDateTime.now().toInstant());
+
+
 
     }
 
