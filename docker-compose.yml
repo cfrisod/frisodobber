@@ -1,3 +1,7 @@
+fd-angular2:
+  image: frisodobber-fd-angular2
+  ports:
+    - "80:80"
 fd-spark:
   image: frisodobber-fd-spark
   ports:
