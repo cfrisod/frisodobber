@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 /**
  * Created by dobber on 3-12-16.
  */
-public class Java8Lambda {
+public class Java8Supplier {
     /**
      * SupplierConsumer
      */
