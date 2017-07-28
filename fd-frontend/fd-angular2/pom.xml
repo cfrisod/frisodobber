@@ -51,7 +51,8 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <nodeVersion>v6.9.5</nodeVersion>
+                    <nodeVersion>v7.8.0</nodeVersion>
+                    <npmVersion>4.2.0</npmVersion>
                 </configuration>
             </plugin>
             <plugin>
